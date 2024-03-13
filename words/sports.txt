@@ -1,0 +1,18 @@
+soccer
+basketball
+cricket
+tennis
+golf
+baseball
+rugby
+table tennis
+volleyball
+ice hockey
+swimming
+boxing
+athletics
+martial arts
+archery
+wrestling
+gymnastics
+surfing
