@@ -7,8 +7,6 @@ from project import load_stickman
 from project import show_goodbye
 from project import start_program
 
-"pytest test_project.py"
-
 
 def test_update_user_guess():
     assert update_user_guess("flower", "_lowe_", "r") == "_lower"
@@ -24,7 +22,7 @@ def test_get_missing_letters():
 
 def test_load_words_chosen_category():
     assert isinstance(load_words_chosen_category("cars"), list)
-    
+
     words = load_words_chosen_category("cars")
     assert "bmw" in words
 
@@ -45,3 +43,7 @@ def test_show_goodbye():
 
 def test_start_program():
     assert isinstance(start_program(), pyfiglet.FigletString)
+
+
+if __name__ == "__main__":
+    pytest.main()
