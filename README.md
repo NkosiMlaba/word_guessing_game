@@ -17,6 +17,7 @@ A word guessing game implemeted in Python.
 
 ## Setup:
 1. Install dependencies
+        
         pip install -r requirements.txt
 
 ## Running the program
