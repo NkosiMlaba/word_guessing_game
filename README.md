@@ -1,4 +1,5 @@
-# HANGMAN (word guessing game)
+# HANGMAN 
+A word guessing game implemeted in Python.
 
 
 ## System Requirements:
