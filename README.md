@@ -2,6 +2,15 @@
 A word guessing game implemeted in Python.
 
 
+## Project Status ![Status](https://img.shields.io/badge/status-completed-brightgreen)
+
+1. The core functionality is completed
+
+2. Additional features that I am looking to have implemented:
+    - Difficulty settings
+    - More robust user interface
+
+
 ## System Requirements:
 - A linux operating system
 - Python3
@@ -9,7 +18,7 @@ A word guessing game implemeted in Python.
 
 
 ## Additional requirements:
-- Internet access
+- Internet access (for dependency installation)
 
 ## Getting Started
 1. Clone the repository
@@ -24,7 +33,7 @@ A word guessing game implemeted in Python.
         python3 project.py
 
 ## Running the tests
-        pytest test_project.py
+        python3 -m unittest test_project.py
 
 
 ## How to use the program
