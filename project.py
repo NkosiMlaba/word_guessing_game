@@ -1,5 +1,6 @@
 import random
 import pyfiglet
+import os
 
 
 class Colors:
@@ -35,17 +36,8 @@ def get_missing_letters(correct_word, user_word_progress):
 
 
 def load_words_chosen_category(category):
-    category = category.lower()
-
-    if category == "cars" or category == "car":
-        path = "cars"
-
-    elif category == "sport" or category == "sports":
-        path = "sports"
-
-    if category == "country" or category == "countries":
-        path = "countries"
-
+    path = category.lower()
+    
     try:
         with open(f"words/{path}.txt", 'r') as file:
             words = file.read().strip().split('\n')
@@ -61,30 +53,32 @@ def show_disclaimer():
 
 
 def show_categories():
-    return """These are the available categories for the hangman words: 
-1. Cars
-2. Sports
-3. Countries
-"""
+    files = [f.replace('.txt', '').capitalize() for f in os.listdir('words') if f.endswith('.txt')]
+    
+    output = "These are the available categories for the hangman words:\n"
+    for index, file in enumerate(files, start=1):
+        output += f"{index}. {file}\n"
+    
+    return output
 
 
 def get_user_category():
-    categories = {"1": "cars",
-                  "2": "sports",
-                  "3": "countries",}
-    while True:
-        number = input("Enter category (e.g 1.): ")
+    files = [f.replace('.txt', '').lower() for f in os.listdir('words') if f.endswith('.txt')]
+    categories = {str(index): file for index, file in enumerate(files, start=1)}
 
-        if number.lower() in categories.keys():
+    while True:
+        number = input("Enter category number (e.g 1.): ")
+
+        if number in categories.keys():
             category = categories[number]
-            return category, f"\nYou chose the '{category}' category for this hangman game"
+            return category, f"\nYou chose the '{category.capitalize()}' category for this hangman game"
             
         elif number.lower() == "exit" or number.lower() == "quit":
             return None, None
 
         else:
             text = "Invalid category number, try again\n"
-            print_with_color(text, "red")
+            print(text)
             continue
 
 
