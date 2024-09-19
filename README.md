@@ -1,6 +1,11 @@
 # HANGMAN 
 A word guessing game implemeted in Python.
 
+## Output
+![Demo](program-output/Screenshot-from-2024-09-19-08-04-12.png)
+![Demo](program-output/Screenshot-from-2024-09-19-08-04-38.png)
+![Demo](program-output/Screenshot-from-2024-09-19-08-04-57.png)
+![Demo](program-output/Screenshot-from-2024-09-19-08-05-21.png)
 
 ## Project Status ![Status](https://img.shields.io/badge/status-completed-brightgreen)
 
