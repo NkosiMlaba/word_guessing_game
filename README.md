@@ -7,7 +7,12 @@ A word guessing game implemeted in Python.
 
 ## Project Status ![Status](https://img.shields.io/badge/status-completed-brightgreen)
 
-1. The core functionality is completed
+1. The core functionality is completed and includes:
+    - Pyfiglet for printing in cool fonts
+    - Colors Class to print different colours to the terminal cyan, red, and yellow
+    - Ascii art to draw the stickman figures
+    - Different categories of words to choose from
+    - Score counting
 
 2. Additional features that I am looking to have implemented:
     - Difficulty settings
@@ -45,13 +50,6 @@ A word guessing game implemeted in Python.
 3. Try to guess the word before running out of chances
 4. Win or lose
 
-## Features
-
-- Pyfiglet for printing in cool fonts
-- Colors Class in order to print different colours to the terminal cyan, red, and yellow to make it easier to read
-- Ascii art to draw the stickman figures
-- Different categories of words to choose from
-- Score counting
 
 ## Detailed description:
 This is a word-guessing game in Python. The user runs the program and tries to guess the word before the chances run out. I used Pyfilget to print in a cool font the welcome and exit messages when running the program. I also used the Colors Class in order to print different colours to the terminal cyan, red, and yellow to make it easier to read. I made this decision in order to make the program more exciting and avoid the bland nature of the terminal.
