@@ -1,1 +1,20 @@
 soccer
+rowing
+gymnastics
+skiing
+surfing
+lacrosse
+fencing
+boxing
+cycling
+badminton
+table tennis
+wrestling
+basketball
+baseball
+tennis
+cricket
+rugby
+golf
+volleyball
+swimming
