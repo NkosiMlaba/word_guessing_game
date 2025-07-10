@@ -1,0 +1,21 @@
+python
+javascript
+java
+ruby
+php
+swift
+go
+rust
+kotlin
+typescript
+scala
+perl
+lua
+elixir
+clojure
+shell
+dart
+haskell
+visual basic
+objective-c
+sql
